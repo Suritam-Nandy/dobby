@@ -8,9 +8,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Bootstrapped using <code>Springboard</code>
-          ok
-        </p>
+          Welcome to <code>Dobby</code>
+         </p>
         <a
           className="App-link"
           href="https://github.com/srm-kzilla/springboard"
