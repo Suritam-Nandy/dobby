@@ -20,6 +20,9 @@ async function startServer() {
       Logger.error(err);
       process.exit(1);
     });
+    app.get('/wsd', (req, res) => {
+      res.send('Testing 123');
+    });
 }
 
 startServer();
