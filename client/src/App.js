@@ -1,5 +1,6 @@
 import React from "react";
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import registerationLogo from './Images/registration-form-1.jpg';
 import './App.css';
 
 function App() {
@@ -8,6 +9,13 @@ function App() {
       <div className="wrapper">
         <form className="box">
           <h1>Signup</h1>
+          <div class="left-container">
+          <img src={registerationLogo} alt="" />
+            
+            </div>
+
+
+
           <div className="left-container">
           <div className="form-group ">
               <input type="text" placeholder="Username" id="user" autocomplete="off" ></input>            
