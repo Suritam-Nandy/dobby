@@ -2,6 +2,8 @@ const express = require('express');
 const config = require('./config');
 const Loaders = require('./loaders');
 const Logger = require('./loaders/logger');
+const cors = require('cors');
+
 
 async function startServer() {
   const app = express();
@@ -23,6 +25,7 @@ async function startServer() {
     app.get('/wsd', (req, res) => {
       res.send('Testing 123');
     });
+  app.use(cors());
 }
 
 startServer();
