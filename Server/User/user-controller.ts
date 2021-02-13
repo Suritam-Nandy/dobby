@@ -19,6 +19,6 @@ const userSignup = async (req: Request, res: Response) => {
 
 export const userRoute = () => {
   const app = Router();
-  app.get("/", userSignup);
+  app.post("/", userSignup);
   return app;
 };
