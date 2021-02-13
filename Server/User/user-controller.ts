@@ -5,7 +5,10 @@ import { addUserToDatabase } from "./user-service";
 const userSignup = async (req: Request, res: Response) => {
   try {
     // await schema.validate(req.body);
+
+      // throw Error;
     await addUserToDatabase(req.body.email, req.body.password);
+    
     res.json({ success: true, message: "User added" });
   } catch (err) {
     // LoggerInstance.error(err)
@@ -16,6 +19,6 @@ const userSignup = async (req: Request, res: Response) => {
 
 export const userRoute = () => {
   const app = Router();
-  app.post("/", userSignup);
+  app.get("/", userSignup);
   return app;
 };
